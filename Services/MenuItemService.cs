@@ -19,11 +19,11 @@ public class MenuItemService
         {
             MessageBox.Show("Nama dan kode belum diisi", "peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
-        else if (string.IsNullOrWhiteSpace(item.Nama))
+         if (string.IsNullOrWhiteSpace(item.Nama))
         {
             MessageBox.Show("Nama belum diisi", "peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
-        else if (string.IsNullOrWhiteSpace(item.Kode))
+         if (string.IsNullOrWhiteSpace(item.Kode))
         {
             MessageBox.Show("Kode belum diisi", "peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
