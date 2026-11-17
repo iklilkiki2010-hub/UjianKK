@@ -40,7 +40,7 @@ public class MenuItemService
     public MenuItem? Cari(string id)
     {
         // TODO 6: Cari dan kembalikan data; null jika tidak ditemukan.
-        return data.FirstOrDefault(x => x.Kode == id;
+        return data.FirstOrDefault(x => x.Kode == id);
         
     }
 }
