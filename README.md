@@ -32,6 +32,15 @@ menuitemservice.cs = isinya aturan bisnis yang mencangkup:
 3. cari data = menggunakan FirstOrDefault() function untuk mencari data sesuai id di dalam koleksi data.
 
 skenario pengujian:
-1. jika user tidak memasukkan nilai apapun ke dalam textbox = akan muncul dialog peringatan bahwa textbox1 atau textbox2 belum diisi.
-2. jika 
+1. jika user tidak memasukkan nilai apapun ke dalam textbox = akan muncul dialog peringatan bahwa textbox1 dan textbox2 belum diisi.
+2. jika user tidak memasukkan nilai di texboxNama = akan muncul dialog peringatan bahwa textboxNama belum diisi.
+3. jika user tidak memasukkan nilai ke dalam textboxKode = akan muncul dialog peringatan bahwa kode masih kosong.
+4. jika user memasukkan masing2 textbox dengan nilai yang benar = akan muncul dialog informasi bahwa berhasil menambang data.
+
+
+
+
+
+
+
 
