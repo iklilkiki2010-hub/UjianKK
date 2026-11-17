@@ -17,7 +17,15 @@ public class MenuItemService
         // TODO 4: Validasi item dan tambahkan ke koleksi.
         if (string.IsNullOrWhiteSpace(item.Nama) || string.IsNullOrWhiteSpace(item.Kode))
         {
-            MessageBox.Show("Kode atau Nama belum diisi", "peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show("Nama dan kode belum diisi", "peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+        else if (string.IsNullOrWhiteSpace(item.Nama))
+        {
+            MessageBox.Show("Nama belum diisi", "peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+        else if (string.IsNullOrWhiteSpace(item.Kode))
+        {
+            MessageBox.Show("Kode belum diisi", "peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
         else
         {
