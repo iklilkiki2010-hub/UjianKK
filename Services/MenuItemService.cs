@@ -15,15 +15,15 @@ public class MenuItemService
     public void Tambah(MenuItem item)
     {
         // TODO 4: Validasi item dan tambahkan ke koleksi.
-        if (string.IsNullOrWhiteSpace(item.Nama) || string.IsNullOrWhiteSpace(item.Kode))
+        if (string.IsNullOrWhiteSpace(item.Nama) && string.IsNullOrWhiteSpace(item.Kode))
         {
             MessageBox.Show("Nama dan kode belum diisi", "peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
-         if (string.IsNullOrWhiteSpace(item.Nama))
+         else if (string.IsNullOrWhiteSpace(item.Nama))
         {
             MessageBox.Show("Nama belum diisi", "peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
-         if (string.IsNullOrWhiteSpace(item.Kode))
+         else if (string.IsNullOrWhiteSpace(item.Kode))
         {
             MessageBox.Show("Kode belum diisi", "peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
