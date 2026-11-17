@@ -31,6 +31,7 @@ public class MenuItemService
         var item = Cari(id);
         if (item != null)
         {
+            MessageBox.Show("berhasil menghapus data", "informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             data.Remove(item);
             return true;
         }
